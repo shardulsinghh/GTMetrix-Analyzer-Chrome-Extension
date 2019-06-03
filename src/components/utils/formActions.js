@@ -28,7 +28,7 @@ export const isFormValid = (formData, formName) => {
 
 export const runTest = (formData) => {
     axios({
-        method: 'post',
+        method: 'get',
         url: 'https://gtmetrix.com/api/0.1/test',
         data:{
             url: "sfreelancer"
@@ -40,6 +40,8 @@ export const runTest = (formData) => {
 
     }).then((response) => {
         console.log(response);
-    });
+    }).catch(
+
+    );
    
 }
